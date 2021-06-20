@@ -1,0 +1,85 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  gap: 1rem;
+  min-width: 50rem;
+  position: relative;
+  @media only screen and (max-width: 37.5em) {
+    flex-direction: column;
+    gap: 1.5rem;
+    min-width: initial;
+    width: 90%;
+  }
+}
+.input-email-address {
+  height: 3.5rem;
+  padding: 2rem;
+  flex: 2;
+  border-radius: 50px;
+  border: 1px solid $Gray;
+  color: $Gray;
+  outline: none;
+  min-width: 20rem;
+  font-weight: 500;
+  &[type="email"] {
+    &:valid {
+      border: 2px solid $Blue;
+    }
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    height: 3rem;
+    padding: 1rem;
+    padding-left: 2rem;
+  }
+}
+.btn {
+  flex: 1;
+  border-radius: 50px;
+  border: 1px solid $Blue;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  background-color: $Blue;
+  min-width: 20rem;
+  cursor: pointer;
+  box-shadow: 7px 6px 5px 1px rgba(0, 0, 0, 0.24);
+  transition: all 0.5s ease;
+  @media only screen and (max-width: 37.5em) {
+    padding: 1rem;
+  }
+  &:hover,
+  &:active {
+    background-color: rgba($Blue, 0.8);
+    border: 1px solid rgba($Blue, 0.8);
+  }
+  &:active {
+    transform: scale(0.88);
+    box-shadow: 3px 2px 2px 3px rgba(0, 0, 0, 0.24);
+    outline: none;
+    border: none;
+  }
+}
+::placeholder {
+  color: $Gray;
+}
+
+//Error
+.error {
+  position: absolute;
+  bottom: -2rem;
+  left: 2rem;
+  font-size: 1.2rem;
+  color: $Light-Red;
+  font-style: italic;
+}
+
+.message {
+  position: absolute;
+  bottom: -2rem;
+  left: 2rem;
+  font-size: 1.2rem;
+  color: $Blue;
+  font-style: italic;
+}

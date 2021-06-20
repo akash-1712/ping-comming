@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <!-- Google icon -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <!-- javaScript -->
+    <script defer src="./js/index.js"></script>
+    <!-- css style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="box">
+        <img class="box-logo" src="./images/logo.svg" alt="logo" />
+      </div>
+      <header>
+        <h1 class="heading-primary">We are launching <span>soon!</span></h1>
+        <p class="paragraph">Subscribe and get notified</p>
+      </header>
+
+      <form class="form" novalidate>
+        <input
+          class="input-email-address"
+          data-email="please provide valid Email Address"
+          type="email"
+          placeholder="Your Email Address..."
+          aria-label="Your Email Address..."
+          required
+        />
+
+        <button type="submit" class="btn">Notify Me</button>
+      </form>
+      <div class="image-box">
+        <img
+          class="image-box-picture"
+          src="./images/illustration-dashboard.png"
+          alt="illustration-dashboard"
+        />
+      </div>
+      <div class="icon-box">
+        <div class="icon-container">
+          <i class="icons fab fa-facebook-f"></i>
+        </div>
+        <div class="icon-container"><i class="icons fab fa-twitter"></i></div>
+        <div class="icon-container"><i class="icons fab fa-instagram"></i></div>
+      </div>
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </div>
+    <!-- We are launching soon! Subscribe and get notified Notify Me &copy; Copyright
+    Ping. All rights reserved. -->
+
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer> -->
+  </body>
+</html>
